@@ -5,8 +5,8 @@ Name_Of_Player = input("Enter your name: ")
 user_action = input("Enter a choice (rock, paper, scissors): ")
 
 
-possible_actions = ["rock", "paper", "scissors"]
-computer_action = random.choice(possible_actions)
+actions = ["rock", "paper", "scissors"]
+computer = random.choice(possible_actions)
 
 print(f"\n{Name_Of_Player} chose {user_action} and  computer chose {computer_action}.\n")
 

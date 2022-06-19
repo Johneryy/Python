@@ -1,5 +1,3 @@
-import string
-
 # # iteration statements(for loop,while loops)
 # # Syntax of a for loop is you have "FOR" as the keyword
 # # Loop control variable is part of what is called a membership operation.e.g.(For x in Python)
@@ -52,5 +50,14 @@ import string
 
 # s = "1010101010101"
 # s.translate(s.maketrans("01", "10"))
-
-
+# FUNCTIONS///
+# def add(a, b):
+#     return a + b
+#
+# add(3, 5)
+#
+#
+# def get_digit(number, position):
+#     return number//(10** position) %10
+#
+# get_digit(234, 1)

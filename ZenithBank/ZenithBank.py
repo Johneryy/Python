@@ -1,4 +1,5 @@
 userName = input("Enter your name -> ")
+alertz = int(input("What is your Alertz mobile Number -> "))
 
 def main_menu():
     user_input= int(input(f"""
@@ -20,7 +21,6 @@ def main_menu():
             15. Loan Request
             0. Exit
     """))
-
     match user_input:
         case 1:
             response = int(input(f"""
@@ -35,7 +35,7 @@ def main_menu():
             Press 11 to go back to main menu
             """))
                 if userInput == 11:
-                    userInput = main_menu()
+                    main_menu()
 
             else:
                 response = int(input("""
@@ -44,7 +44,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
                 if response == 1:
-                    userInput = main_menu()
+                    main_menu()
 
         case 2:
             response = int(input("""
@@ -53,7 +53,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 3:
             response = int(input("""
@@ -65,7 +65,7 @@ def main_menu():
                 print("Account Restriction successful")
 
             else:
-                user_Input = main_menu()
+                main_menu()
 
         case 4:
             response = int(input("""
@@ -74,7 +74,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 5:
             response = int(input("""
@@ -87,7 +87,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 6:
             response = int(input("""
@@ -98,7 +98,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 7:
             response = int(input("""
@@ -109,7 +109,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 8:
             response = int(input("""
@@ -143,7 +143,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 9:
             response = int(input("""
@@ -154,7 +154,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 10:
             response = int(input(f"""
@@ -165,7 +165,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 11:
             response = int(input("""
@@ -174,7 +174,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 12:
             response = int(input("""
@@ -183,7 +183,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 13:
             response = int(input("""
@@ -192,7 +192,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 14:
             response = int(input("""
@@ -203,7 +203,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
         case 15:
             response = int(input(f"""
@@ -212,9 +212,7 @@ def main_menu():
             Press 1 to go back to main menu
             """))
             if response == 1:
-                userInput = main_menu()
+                main_menu()
 
 
 main_menu()
-alertz = int(input("What is your Alertz mobile Number -> "))
-

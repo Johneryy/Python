@@ -48,7 +48,7 @@ def main_menu():
 
         case 2:
             response = int(input("""
-            You do not have a dormant account
+            You do not have a dormant account.
             Press 0 to exit
             Press 1 to go back to main menu
             """))

@@ -1,5 +1,5 @@
 userName = input("Enter your name -> ")
-alertz = int(input("What is your Alertz mobile Number -> "))
+alertz = int(input("What is your Alertz mobile Number? -> "))
 
 def main_menu():
     user_input= int(input(f"""

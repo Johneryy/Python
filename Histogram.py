@@ -7,4 +7,12 @@ def histogram(word: str) -> dict[str, int]:
         map[char] = word.lower().count(char)
     return map
 
-print(histogram("Alabama is a town"))
+def histogram2(word):
+    import string
+    return {char: word.lower().count(char) for char in string.ascii_lowercase}
+
+print(histogram2("I prefer Java to python"))
+
+def uniquevalues(word: str) -> int:
+    return len(set(word))
+print(uniquevalues("Alabama"))

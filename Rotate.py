@@ -4,11 +4,9 @@ def rotate(list_to_rotate: list[int], rotate_by: int) -> list[int]:
 
 print(rotate([7, -3, 2, 4, 9], 3))
 
-
 def bracket_pair(brackets: str) -> bool:
     if len(brackets) < 2 or len(brackets) % 2 != 0:
         return False
-
 
     stack = []
 
@@ -24,10 +22,8 @@ def bracket_pair(brackets: str) -> bool:
                 stack.pop()
             else:
                 return False
-
         else:
             return False
 
     return True
-
 print(bracket_pair("{}({[]})"))

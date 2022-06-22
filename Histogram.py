@@ -15,4 +15,4 @@ print(histogram2("I prefer Java to python"))
 
 def uniquevalues(word: str) -> int:
     return len(set(word))
-print(uniquevalues("Alabama"))
+print(uniquevalues("Alabama is on"))

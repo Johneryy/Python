@@ -1,8 +1,8 @@
-# def rotate(list_to_rotate: list[int], rotate_by: int) -> list[int]:
-#     rotate_by = rotate_by % len(list_to_rotate)
-#     return list_to_rotate[rotate_by:] + list_to_rotate[:rotate_by]
-#
-# print(rotate([7, -3, 2, 4, 9], 3))
+def rotate(list_to_rotate: list[int], rotate_by: int) -> list[int]:
+    rotate_by = rotate_by % len(list_to_rotate)
+    return list_to_rotate[rotate_by:] + list_to_rotate[:rotate_by]
+
+print(rotate([7, -3, 2, 4, 9], 3))
 
 
 def bracket_pair(brackets: str) -> bool:

@@ -58,108 +58,41 @@ def check_winner():
     else:
         return False
 
-
-
-
-
 def empty_spaces():
-
-
-
     spaces = 9
-
-
-
     for row in range(3):
-
         for column in range(3):
-
             if buttons[row][column]['text'] != "":
-
-                spaces -= 1
-
-
-
+                 spaces -= 1
     if spaces == 0:
-
         return False
-
     else:
-
         return True
 
-
-
 def new_game():
-
-
-
     global player
-
-
-
     player = random.choice(players)
-
-
-
     label.config(text=player+" turn")
-
-
-
     for row in range(3):
-
         for column in range(3):
-
             buttons[row][column].config(text="",bg="#F0F0F0")
-
-
-
-
-
 window = Tk()
-
 window.title("Tic-Tac-Toe")
-
 players = ["x","o"]
-
 player = random.choice(players)
-
-buttons = [[0,0,0],
-
-           [0,0,0],
-
-           [0,0,0]]
-
-
+buttons = [[0, 0, 0],
+             [0, 0, 0],
+           [0, 0, 0]]
 
 label = Label(text=player + " turn", font=('consolas',40))
-
 label.pack(side="top")
-
-
-
 reset_button = Button(text="restart", font=('consolas',20), command=new_game)
-
 reset_button.pack(side="top")
-
-
-
 frame = Frame(window)
-
 frame.pack()
-
-
-
 for row in range(3):
-
     for column in range(3):
-
         buttons[row][column] = Button(frame, text="" ,font=('consolas',40), width=5, height=2,
-
                                       command= lambda row = row, column=column: next_turn(row,column))
-
-        buttons[row][column].grid(row=row,column=column)
-
-
-
+        buttons[row][column].grid(row=row, column=column)
 window.mainloop()

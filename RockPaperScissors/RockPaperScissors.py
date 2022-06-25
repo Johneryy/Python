@@ -1,5 +1,6 @@
 import random
 
+name = input("Enter your name-> ")
 while True:
     choices = ["rock", "paper", "scissors"]
     computer = random.choice(choices)
@@ -43,4 +44,4 @@ while True:
     play_again = input("Play again? (yes/no): ").lower()
     if play_again != "yes":
         break
-print("Bye!")
+print("Bye!",name)

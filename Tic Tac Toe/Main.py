@@ -77,6 +77,11 @@ def new_game():
         for column in range(3):
             buttons[row][column].config(text="",bg="#F0F0F0")
 
+# def choice():
+#     global player
+#     player = random.choice(players)
+#     label.config(text=choice_button+ "turn")
+
 
 window = Tk()
 window.title("Tic-Tac-Toe")
@@ -90,6 +95,7 @@ label = Label(text=player + " turn", font=('consolas',40))
 label.pack(side="top")
 reset_button = Button(text="restart", font=('consolas',20), command=new_game)
 reset_button.pack(side="top")
+# choice_button = Button(text="Player 1(x)",font=('consolas', 20), command=choice)
 frame = Frame(window)
 frame.pack()
 for row in range(3):

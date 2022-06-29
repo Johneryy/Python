@@ -37,4 +37,17 @@
 # fruits.sort(key=len)
 # print(fruits)
 
-{{()}}
+# {{()}}
+
+# lst = [1, 2, 3, 4, 5, 8]
+# print(any(True if i <= 7 else False for i in lst))
+#
+# print(all(True if i >= 7 else False for i in lst))
+#
+# print(max(["I", "Love", "Love"], key = len))
+
+l1 = [1, 2, 3, 4]
+l2 = [5, 6, 7, 8, 9]
+print(list(zip(l1, l2)))
+
+print(list(zip(l1, l2, strict = True)))

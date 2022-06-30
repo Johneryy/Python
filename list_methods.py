@@ -46,8 +46,19 @@
 #
 # print(max(["I", "Love", "Love"], key = len))
 
-l1 = [1, 2, 3, 4]
-l2 = [5, 6, 7, 8, 9]
-print(list(zip(l1, l2)))
+# l1 = [1, 2, 3, 4]
+# l2 = [5, 6, 7, 8, 9]
+# print(list(zip(l1, l2)))
+#
+# # print(list(zip(l1, l2, strict = True)))
+#
+# list_of_dict = [{"Name:" "Asake", "Gender:" "F"}, {"Name:" "Boyo", "Gender:" "M"}]
+#
+# mapped_list_of_dict = list(
+#     map(lambda x: ("Mr. " if x["Gender"] == "M" else "Mrs. ") - x["name"], list_of_dict)
+# )
+# print(mapped_list_of_dict)
+# print([("Mr. " if x["Gender"] == "M" else "Mrs. ") + x["name"] for x in list_of_dict])
 
-print(list(zip(l1, l2, strict = True)))
+
+ 

@@ -3,7 +3,7 @@ import doctest
 def add(a, b):
     """
     >>> add(3, 5)
-    0
+    8
     """
     return a + b
 
